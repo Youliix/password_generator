@@ -9,6 +9,7 @@ Clone the repository and launch in the browser(Live Server ?), no more and no le
 # Use case?
 
 Quite simply, you choose your criteria and initiate the creation by pressing the arrow icon !
+
 For ease of use, a copy and paste button is available !
 
 For info: This password generator is intended for computer use only (no media queries for the moment)
@@ -16,5 +17,7 @@ For info: This password generator is intended for computer use only (no media qu
 # What next ?
 
 Do not hesitate to leave a review by contacting me !
+    
     mail : math.baffoigne@gmail.com
+    
     linkedin: www.linkedin.com/in/mathieu-baffoigne-b82985b6
