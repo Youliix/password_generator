@@ -1,0 +1,180 @@
+* {
+    font-size: 16px;
+    font-family: 'Quintessential', cursive;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(../assets/wp1991165-password-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+
+--border-width: 3px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 850px;
+  height: 450px;
+  color: white;
+  background: rgb(119,136,153);
+  border-radius: var(--border-width);
+}
+
+#container::after {
+
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 200% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+#title_value {
+    
+    font-size: 2.5rem;
+
+}
+
+#password_generator {
+
+    width: 50%;
+    height: 50px; 
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#password_value {
+    width: 70%;
+    height: auto;
+
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+#generate_button {
+    background-image: url(../assets/arrows-rotate-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+    
+    width: 13%;
+
+    border-radius: 5px;
+    border: none;
+
+}
+
+#paste_button {
+
+    background-image: url(../assets/clipboard-solid.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+
+    width: 13%;
+
+    border-radius: 5px;
+    border: none;
+}
+
+#checkbox_value {
+
+    width: 60%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#checkbox {
+
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#length_password {
+
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+
+    text-align: center;
+
+}
+
+#rangevalue {
+    text-align: center;
+
+    cursor: pointer;
+
+    width: 15%;
+    height: auto;
+
+    background: darkorange;
+    padding: 5px 6px;
+    border-radius: 3px;
+    color: #fff;
+
+}
+
+#length {
+    width: 65%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+

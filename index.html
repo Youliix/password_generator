@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--General Style-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <!--Script js with -->
+    <script src="./index.js" defer></script>
+
+    <title>Password Generator</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="title_value">
+            <h1 id="title">Password Generator</h1>
+        </div>
+
+        <div id="password_generator">
+
+            <input id="paste_button" type="button">
+
+            <input id="password_value" type="text" readonly>
+
+            <input id="generate_button" type="button">
+        
+        </div>
+
+        <div id="checkbox_value">
+           <div id="checkbox">
+                <div>
+                    <input type="checkbox" id="a-z" name="a-z">
+                    <label for="a-z">a - z</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="A-Z" name="A-Z">
+                    <label for="A-Z">A - Z</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="0-9" name="0-9">
+                    <label for="0-9">0 - 9</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="~-|" name="~-|">
+                    <label for="~-|">[ ~ - | ]</label>
+                </div>     
+            </div>     
+            <div id="length_password">
+                <input type="range" id="length" name="length" min="8" max="24" step="1" value="12" oninput="rangevalue.value=value">
+                <output id="rangevalue">12</output>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
