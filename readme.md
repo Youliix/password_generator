@@ -18,7 +18,7 @@
 
 ## What does it look like? A quoi ça ressemble ?
 
-- **Here's an example of the app:**
+- **Here's an example of the app:** / **Voici un exemple de l'application :**
 
     ![alt text](./assets/passwordGeneratorImg.png "Example of the app")
 
