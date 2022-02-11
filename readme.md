@@ -20,7 +20,7 @@
 
 - **Here's an example of the app:**
 
-    [app]: ./assets/passwordGeneratorImg.png "Example of the app"
+    ![alt text](./assets/passwordGeneratorImg.png "Example of the app")
 
 ---
 
