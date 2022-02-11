@@ -31,7 +31,6 @@ generatePassword.addEventListener('click', () => {
     const lengthPasswordChosen = parseInt(passwordLength.value, 10);
     // Need to know the values chosen for the password
     const dataPassword = [];
-
     // Ternary to know the content of our array
     passwordLowerCase.checked ? dataPassword.push(az) : undefined;
     passwordUpperCase.checked ? dataPassword.push(AZ) : undefined;
@@ -45,10 +44,18 @@ generatePassword.addEventListener('click', () => {
     const valuesAvailable = dataPassword.join('');
 
     //It is time to create the password with all available data !
-    for ( let i = 0; i < lengthPasswordChosen; i++) {
-        generatedPassword += valuesAvailable.charAt(Math.floor(Math.random() * valuesAvailable.length));
+    if(dataPassword.length !== 0) {
+    
+        for ( let i = 0; i < lengthPasswordChosen; i++) {
+            generatedPassword += valuesAvailable.charAt(Math.floor(Math.random() * valuesAvailable.length));
+        }
+        passwordValue.value = generatedPassword;
+    
+    } else {
+    
+        passwordValue.value = 'P@ssW0r!_Ex@mp!e';
+    
     }
-    passwordValue.value = generatedPassword;
 
 });
 
@@ -56,6 +63,7 @@ pastePassword.addEventListener('click', () => {
 
     if (passwordValue.value === 'P@ssW0r!_Ex@mp!e') {
         alert('Please generate a password first !');
+
     } else {
 
         passwordValue.select();
