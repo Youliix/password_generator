@@ -46,6 +46,7 @@
 
 - **Consultez mon profil sur [github](https://github.com/Youliix) et n'hésitez pas à laisser un avis en me contactant via email ou linkedin !**
   
-- **[email](math.baffoigne@gmail.com)**
-
-- **[linkedin](www.linkedin.com/in/mathieu-baffoigne-b82985b6)**
+| Contacts      |         |
+| ------------- |:-------------:|
+| email         | math.baffoigne@gmail.com |
+| linkedin      | www.linkedin.com/in/mathieu-baffoigne-b82985b6 |
