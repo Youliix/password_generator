@@ -36,7 +36,7 @@
 
 - For info: This password generator is intended for computer use only (no media queries for the moment)
 
-- **Pour information : Ce générateur de mots de passe est destiné à un usage informatique uniquement (pas de requêtes média pour le moment).**
+- **Pour information : Ce générateur de mots de passe est destiné à un usage PC uniquement (pas de media queries pour le moment).**
 
 ---
 
